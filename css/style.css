@@ -34,10 +34,18 @@ img {
     border-radius: 50%;
     justify-content: left;
     display: flex;
+    height: 100px;
+    margin-top: 10px;
 }
 
 main {
   background-color: white;
+  width: 300px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .name {
@@ -50,6 +58,9 @@ main {
 .rating {
     display: flex;
     flex-flow: row-reverse;
+    font-size: 25px;
+    margin-bottom: 0px;
+    padding-top: ;
 }
 
 .class-title {
@@ -60,10 +71,139 @@ main {
 .job-title {
     display: flex;
     flex-flow: row-reverse;
+    font-size: 15px;
 }
 
 .services {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 60px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.phone {
+  display: flex;
+  background-color: lightgreen;
+  height: 100%;
+  width: 50%;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  background-color: green;
+  height: 100%;
+  width: 50%;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+padding-right: 55px;
+margin-right: 20px;
+padding-top: 15px;
+}
+
+.grey-box {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  width: 100%;
+  height: 35%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px){
+  main {
+    width: 420px;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: left;
+  }
+
+h1 {
+  margin: 0;
+}
+
+p.rating {
+  margin: 0;
+}
+
+img {
+  display: flex;
+}
+
+.grey-box {
+  background: none;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.info {
+  display: flex;
+  width: 50%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 7px;
+  padding-top: 20px;
+}
+
+.icons {
+  width: 40%;
+  height: 15%;
+  left: 0px;
+  position: absolute;
+}
+
+.picture {
+  display: flex;
+  width: 40%;
+  height: 85%;
+  left: 0px;
+  position: sticky;
+  flex-direction: column;
+}
+
+.rating {
+  font-size: 15px;
+}
+
+.name {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fees {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+
+.profile-picture {
+  width: 130px;
+  margin: 20px;
+}
+
 }
